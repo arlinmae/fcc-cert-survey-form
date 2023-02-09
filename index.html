@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+</head>
+<body>
+    <header>
+        <h1 id="title">Adventur'rs' guild surv'ry</h1>
+        <p id="description">Thanketh thee f'r thy int'rest!</p>
+    </header>
+    <form id="survey-form">
+        <div id="container">
+        <label id="name-label">Enter Your First Name: <input id="name" name="name" type="text" placeholder="name" required></label>
+        <label id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="email" required></label>
+        <label id="number-label" >Age (Optional)<input id="number" name="number" type="number" placeholder="age" value="number" min="10" max="99" optional></label>
+          <p>Which describes thy primary class?</p>
+            <select name="dropdown" id="dropdown">
+                <option value="0">Prithee selecteth thy primary class</option>
+                <option value="1">Bard</option>
+                <option value="2">Rogue</option>
+                <option value="3">Fighter</option>
+                <option value="4">Wizard</option>
+                <option value="5">I pref'r not to sayeth</option>
+                <option value="6">Other</option>
+            </select>
+                <p>Wouldst thee recommendeth the guild to a cousin?</p>
+                <label for="yes"> <input type="radio" name="recommend" value="recommend" required> Of course!</label>
+                <label for="no" > <input type="radio" name="recommend" value="recommend" required> No!</label>
+                <label for="maybe" > <input type="radio" name="recommend" value="recommend" required> P'rhaps</label>
+                <p>What is thy fav'rite typeth adventure?</p>
+            <select name="dropdown" id="dropdown">
+                <option value="">Prithee selecteth an option</option>
+                <option value="1">Dungeons</option>
+                <option value="2">Slaying Dragons</option>
+                <option value="3">Political Manipulation</option>
+                <option value="4">Clearing rats from tavern cellars</option>
+            </select>
+            <p>What wouldst thee liketh to seeth did improve? (check all yond apply)</p>
+            <label for="combat"> <input type="checkbox" value="combat"> More combat! </label>
+            <label for="pizza"><input type="checkbox" value="pizza"> Pizza parties!</label>
+            <label for="politics"><input type="checkbox" value="politics"> Political intrigue!</label>
+            <label for="dungeons"><input type="checkbox" value="dungeons"> More dungeons!</label>
+           
+            <br>
+            <label for="textarea">Aught else thee wanteth to sayeth?!<textarea id="comments" name="comments" rows="3" cols="30" placeholder="Well.."></textarea>
+            <input id="submit" type="submit" value="Submit" name="submit">
+        </div>
+    </form>
+</body>
+</html>
